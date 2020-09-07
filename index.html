@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button data-modal-open class="hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -110,6 +110,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-list-text">Десктопные приложения</p>
             </li>
             <li class="work-list-item">
               <img
@@ -119,6 +120,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-list-text">Мобильные приложения</p>
             </li>
             <li class="work-list-item">
               <img
@@ -128,6 +130,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-list-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -412,10 +415,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button>закрыть</button>
+        <button type="button" class="modal-btn" data-modal-close>
+          <span class="line left"></span><span class="line right"></span>
+        </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
